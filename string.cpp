@@ -239,8 +239,8 @@ string string::operator+(string &obj) const         // Overloaded + operator
     }
     else
     {
-        strcpy(newstr.mystring, this->get_str());
-        strcat(newstr.mystring, obj.get_str());
+        strcpy(newstr.mystring, this->mystring);
+        strcat(newstr.mystring, obj.mystring);
     }
     return newstr;
 }
